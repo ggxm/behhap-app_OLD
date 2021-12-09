@@ -1,0 +1,14 @@
+/*********************
+// Toolbox
+*********************/
+
+.toolbox__title {
+  text-align: center;
+  padding: 12px 0;
+  @include md_up {
+    padding: 16px 0;
+  }
+  @include lg_up {
+    padding: 24px 0;
+  }
+}

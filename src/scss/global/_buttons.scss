@@ -1,0 +1,80 @@
+/*********************
+// Buttons
+*********************/
+
+.btn {
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+  background-color: transparent;
+  @include prefix((
+    transition: all 300ms ease-in
+  ), webkit ms);
+}
+
+.btn-main {
+  position: relative;
+  padding: 8px 24px 8px 16px;
+  border: 1px solid var(--color-main);
+  color: var(--color-second);
+  background-image: linear-gradient(var(--color-main), var(--color-main));
+  background-size: 100% 100%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  @include prefix((
+    transition: all 300ms ease-in
+  ), webkit ms);
+  svg {
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &:hover,
+  &.router-link-active {
+    color: var(--color-main);
+    background-size: 100% 0;
+  }
+}
+
+.btn-second {
+  position: relative;
+  padding: 8px 24px 8px 16px;
+  border: 1px solid var(--color-main);
+  color: var(--color-main);
+  background-image: linear-gradient(var(--color-main), var(--color-main));
+  background-size: 100% 0%;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  @include prefix((
+    transition: all 300ms ease-in
+  ), webkit ms);
+  svg {
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &:hover,
+  &.router-link-active {
+    color: var(--color-second);
+    background-size: 100% 100%;
+  }
+}
+
+.btn-third {
+
+}
+
+.link {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: var(--color-main);
+}

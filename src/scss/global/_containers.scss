@@ -1,0 +1,33 @@
+/*********************
+// Containers
+*********************/
+
+.container-sm {
+  box-sizing: border-box;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.container-md {
+  box-sizing: border-box;
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.container-lg {
+  box-sizing: border-box;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.container-full {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px;
+}
